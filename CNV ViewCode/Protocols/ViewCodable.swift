@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SnapKit
 
 protocol ViewCodable {
 	func configure()

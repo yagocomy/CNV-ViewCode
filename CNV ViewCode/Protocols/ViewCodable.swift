@@ -8,7 +8,7 @@
 import Foundation
 import SnapKit
 
-protocol ViewCodable {
+protocol ViewCodable: UIView {
 	func configure()
 	func buildHierarchy()
 	func buildConstraints()

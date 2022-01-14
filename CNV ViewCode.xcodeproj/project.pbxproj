@@ -15,6 +15,7 @@
 		A0B9117726E04452008545EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B9117526E04452008545EB /* Main.storyboard */; };
 		A0B9117926E04454008545EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B9117826E04454008545EB /* Assets.xcassets */; };
 		A0B9117C26E04454008545EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B9117A26E04454008545EB /* LaunchScreen.storyboard */; };
+		BC6A0D142791AA5000A81DA4 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6A0D132791AA5000A81DA4 /* ViewCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		A0B9117826E04454008545EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0B9117B26E04454008545EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B9117D26E04454008545EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6A0D132791AA5000A81DA4 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		D8DA2861941AE6C2A5A853AC /* Pods-CNV ViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNV ViewCode.release.xcconfig"; path = "Target Support Files/Pods-CNV ViewCode/Pods-CNV ViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		E0247B675E52ACD289E4F66A /* Pods_CNV_ViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNV_ViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11F6E9E9D33A23309333B35 /* Pods-CNV ViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNV ViewCode.debug.xcconfig"; path = "Target Support Files/Pods-CNV ViewCode/Pods-CNV ViewCode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		A0B9116E26E04452008545EB /* CNV ViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				BC6A0D122791A9F700A81DA4 /* Protocols */,
 				A0B9116F26E04452008545EB /* AppDelegate.swift */,
 				A0B9117126E04452008545EB /* SceneDelegate.swift */,
 				A0646BF226E04B1600F1368B /* LoginView.swift */,
@@ -92,6 +95,14 @@
 				A0B9117D26E04454008545EB /* Info.plist */,
 			);
 			path = "CNV ViewCode";
+			sourceTree = "<group>";
+		};
+		BC6A0D122791A9F700A81DA4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A0D132791AA5000A81DA4 /* ViewCodable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC6A0D142791AA5000A81DA4 /* ViewCodable.swift in Sources */,
 				A0B9117426E04452008545EB /* ViewController.swift in Sources */,
 				A0B9117026E04452008545EB /* AppDelegate.swift in Sources */,
 				A0646BF326E04B1600F1368B /* LoginView.swift in Sources */,

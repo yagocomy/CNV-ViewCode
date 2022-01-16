@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginView: UIView {
+final class LoginView: UIView {
     
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView(frame: CGRect.zero)

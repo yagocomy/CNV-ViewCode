@@ -5,10 +5,7 @@
 //  Created by Yago De Moura Silva on 01/09/21.
 //
 
-import Foundation
 import UIKit
-import SnapKit
-
 
 class LoginView: UIView {
     
@@ -31,18 +28,28 @@ class LoginView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: CGRect.zero)
-        self.addSubview(emailTextField)
-        
-
-        emailTextField.snp.makeConstraints{ make in
-            make.top.equalToSuperview().offset(100)
-            make.left.equalToSuperview().offset(20)
-            make.right.equalToSuperview().offset(-20)
-
-        }
-}
+		  setupView()
+	 }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+// MARK: - Extension ViewCodable
+
+extension LoginView: ViewCodable {
+	
+	func buildHierarchy() {
+		addSubview(emailTextField)
+	}
+	
+	func buildConstraints() {
+		emailTextField.snp.makeConstraints { make in
+			make.top.equalToSuperview().offset(100)
+			make.left.equalToSuperview().offset(20)
+			make.right.equalToSuperview().offset(-20)
+		}
+	}
+	
 }
